@@ -9,6 +9,20 @@ from django.core.validators import validate_email
 from django.shortcuts import redirect, render
 from django.utils import timezone
 from django.views.decorators.http import require_http_methods
+from django.shortcuts import render
+from .models import Hobby  # Import your models from apps.core.models
+
+def home_view(request):
+    # Fetch data seeded into your MySQL database
+    hobbies = Hobby.objects.all()
+    
+    context = {
+        'hobbies': hobbies,
+        'page_title': 'Explore Kabankalan',
+    }
+    # Render directly to your root templates folder
+    return render(request, 'home.html', context)
+
 
 User = get_user_model()
 
