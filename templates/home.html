@@ -1,30 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page_title }}</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-50 text-slate-800 p-8">
-    <main class="max-w-5xl mx-auto">
-        <h1 class="text-3xl font-extrabold text-indigo-900 mb-6">{{ page_title }}</h1>
+{% extends "theme/base.html" %}
+{% block content %}
+<div class="container-xl">
+  <div class="page-header d-print-none" aria-label="Page header">
+    <div class="container-xl">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="page-pretitle">Overview</div>
+          <div class="d-flex align-items-center gap-3 flex-wrap d-none d-md-flex">
+            <h2 class="page-title mb-0">Dashboard</h2>
+          </div>
+          <h2 class="page-title mb-0 d-md-none">Dashboard</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {% for hobby in hobbies %}
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition">
-                    <h2 class="text-xl font-bold text-slate-900 mb-2">{{ hobby.name }}</h2>
-                    {% if hobby.description %}
-                        <p class="text-sm text-slate-600">{{ hobby.description }}</p>
-                    {% endif %}
-                </div>
-            {% empty %}
-                <div class="col-span-full p-6 text-center bg-amber-50 border border-amber-200 rounded-lg text-amber-800">
-                    No items found in the database. Run <code class="font-mono bg-amber-100 px-2 py-1 rounded">python manage.py seed_kabankalan</code> to populate data.
-                </div>
-            {% endfor %}
-        </section>
-    </main>
-</body>
-</html>
+  <div class="card">
+    <div class="card-body text-muted">
+      Dashboard
+    </div>
+  </div>
+
+</div>
+{% endblock %}

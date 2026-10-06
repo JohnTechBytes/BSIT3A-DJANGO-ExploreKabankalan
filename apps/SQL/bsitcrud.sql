@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2026 at 04:39 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: Oct 06, 2026 at 04:28 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `bsitcrud`
+-- Database: `bsit_crud`
 --
 
 -- --------------------------------------------------------
@@ -141,7 +141,71 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 (77, 'Can add info', 20, 'add_info'),
 (78, 'Can change info', 20, 'change_info'),
 (79, 'Can delete info', 20, 'delete_info'),
-(80, 'Can view info', 20, 'view_info');
+(80, 'Can view info', 20, 'view_info'),
+(81, 'Can add category', 21, 'add_category'),
+(82, 'Can change category', 21, 'change_category'),
+(83, 'Can delete category', 21, 'delete_category'),
+(84, 'Can view category', 21, 'view_category'),
+(85, 'Can add city information', 22, 'add_cityinformation'),
+(86, 'Can change city information', 22, 'change_cityinformation'),
+(87, 'Can delete city information', 22, 'delete_cityinformation'),
+(88, 'Can view city information', 22, 'view_cityinformation'),
+(89, 'Can add hobby', 23, 'add_hobby'),
+(90, 'Can change hobby', 23, 'change_hobby'),
+(91, 'Can delete hobby', 23, 'delete_hobby'),
+(92, 'Can view hobby', 23, 'view_hobby'),
+(93, 'Can add itinerary', 24, 'add_itinerary'),
+(94, 'Can change itinerary', 24, 'change_itinerary'),
+(95, 'Can delete itinerary', 24, 'delete_itinerary'),
+(96, 'Can view itinerary', 24, 'view_itinerary'),
+(97, 'Can add place', 25, 'add_place'),
+(98, 'Can change place', 25, 'change_place'),
+(99, 'Can delete place', 25, 'delete_place'),
+(100, 'Can view place', 25, 'view_place'),
+(101, 'Can add place photo', 26, 'add_placephoto'),
+(102, 'Can change place photo', 26, 'change_placephoto'),
+(103, 'Can delete place photo', 26, 'delete_placephoto'),
+(104, 'Can view place photo', 26, 'view_placephoto'),
+(105, 'Can add itinerary item', 27, 'add_itineraryitem'),
+(106, 'Can change itinerary item', 27, 'change_itineraryitem'),
+(107, 'Can delete itinerary item', 27, 'delete_itineraryitem'),
+(108, 'Can view itinerary item', 27, 'view_itineraryitem'),
+(109, 'Can add review', 28, 'add_review'),
+(110, 'Can change review', 28, 'change_review'),
+(111, 'Can delete review', 28, 'delete_review'),
+(112, 'Can view review', 28, 'view_review'),
+(113, 'Can add city information', 29, 'add_cityinformation'),
+(114, 'Can change city information', 29, 'change_cityinformation'),
+(115, 'Can delete city information', 29, 'delete_cityinformation'),
+(116, 'Can view city information', 29, 'view_cityinformation'),
+(117, 'Can add place photo', 30, 'add_placephoto'),
+(118, 'Can change place photo', 30, 'change_placephoto'),
+(119, 'Can delete place photo', 30, 'delete_placephoto'),
+(120, 'Can view place photo', 30, 'view_placephoto'),
+(121, 'Can add category', 31, 'add_category'),
+(122, 'Can change category', 31, 'change_category'),
+(123, 'Can delete category', 31, 'delete_category'),
+(124, 'Can view category', 31, 'view_category'),
+(125, 'Can add itinerary', 32, 'add_itinerary'),
+(126, 'Can change itinerary', 32, 'change_itinerary'),
+(127, 'Can delete itinerary', 32, 'delete_itinerary'),
+(128, 'Can view itinerary', 32, 'view_itinerary'),
+(129, 'Can add review', 33, 'add_review'),
+(130, 'Can change review', 33, 'change_review'),
+(131, 'Can delete review', 33, 'delete_review'),
+(132, 'Can view review', 33, 'view_review'),
+(133, 'Can add hobby', 34, 'add_hobby'),
+(134, 'Can change hobby', 34, 'change_hobby'),
+(135, 'Can delete hobby', 34, 'delete_hobby'),
+(136, 'Can view hobby', 34, 'view_hobby'),
+(137, 'Can add place', 35, 'add_place'),
+(138, 'Can change place', 35, 'change_place'),
+(139, 'Can delete place', 35, 'delete_place'),
+(140, 'Can view place', 35, 'view_place'),
+(141, 'Can add itinerary item', 36, 'add_itineraryitem'),
+(142, 'Can change itinerary item', 36, 'change_itineraryitem'),
+(143, 'Can delete itinerary item', 36, 'delete_itineraryitem'),
+(144, 'Can view itinerary item', 36, 'view_itineraryitem');
 
 -- --------------------------------------------------------
 
@@ -168,7 +232,7 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$720000$EcUWmJliC0ddFa1gTCmeBh$ZU8a1pV8OcMxx3+eTljRu20P0fOSNv1BumXEwFAS968=', '2026-09-28 14:38:39.705136', 1, 'glenn', 'Glenn', 'Azuelo', 'glennazuelo1@gmail.com', 1, 1, '2026-05-12 14:09:37.605739'),
+(1, 'pbkdf2_sha256$600000$MLB850WarN98BGxFY7bKBF$DRLXYNx+ZqujXIU7BYI60Ai1oe8sMIBuXV3V8fljydo=', '2026-10-06 01:04:45.577599', 1, 'glenn', 'Glenn', 'Azuelo', 'glennazuelo1@gmail.com', 1, 1, '2026-05-12 14:09:37.605739'),
 (2, 'pbkdf2_sha256$1200000$6tJ7297yjDHjAufSku1f6Q$/+XGBQy79azDzpUZ5QvzAQ7L3T608gS5zuB2/ATXeEc=', '2026-08-07 06:43:08.595063', 2, 'laravel', 'Laravel', 'Azuelo', 'glennazuelo12@gmail.com', 1, 1, '2026-06-25 10:30:12.000000');
 
 -- --------------------------------------------------------
@@ -236,11 +300,27 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 (4, 'auth', 'user'),
 (9, 'comments', 'comment'),
 (5, 'contenttypes', 'contenttype'),
+(31, 'core', 'category'),
+(29, 'core', 'cityinformation'),
+(34, 'core', 'hobby'),
+(32, 'core', 'itinerary'),
+(36, 'core', 'itineraryitem'),
+(35, 'core', 'place'),
+(30, 'core', 'placephoto'),
+(33, 'core', 'review'),
 (19, 'courses', 'courseschedule'),
 (17, 'courses', 'quiz'),
 (18, 'courses', 'quizquestion'),
 (14, 'courses', 'tblcourse'),
+(21, 'info', 'category'),
+(22, 'info', 'cityinformation'),
+(23, 'info', 'hobby'),
 (20, 'info', 'info'),
+(24, 'info', 'itinerary'),
+(27, 'info', 'itineraryitem'),
+(25, 'info', 'place'),
+(26, 'info', 'placephoto'),
+(28, 'info', 'review'),
 (13, 'journal', 'journalentry'),
 (8, 'likes', 'like'),
 (7, 'posts', 'post'),
@@ -312,7 +392,9 @@ INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 (42, 'students', '0004_tblstudents_user', '2026-08-07 06:30:49.635627'),
 (43, 'students', '0005_assign_student_ownership', '2026-08-07 06:30:49.642613'),
 (44, 'courses', '0009_delete_courseschedule', '2026-09-28 13:26:33.001214'),
-(45, 'info', '0001_initial', '2026-09-28 13:26:33.140759');
+(45, 'info', '0001_initial', '2026-09-28 13:26:33.140759'),
+(47, 'info', '0002_delete_cityinformation_remove_itinerary_user_and_more', '2026-10-06 01:30:50.940738'),
+(48, 'core', '0001_initial', '2026-10-06 01:47:15.334061');
 
 -- --------------------------------------------------------
 
@@ -332,6 +414,7 @@ CREATE TABLE `django_session` (
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
 ('0e34mgdvsji0i7w20ousc7ifdy390qei', '.eJxVjEsOgjAUAO_y1qbpK7QFlu49A3mf1qIGEgor490NCQvdzkzmDSPtWxn3mtZxUhgA4fLLmOSZ5kPog-b7YmSZt3VicyTmtNXcFk2v69n-DQrVAgNERueoiZ0Qaeu0s4Ex9I1YyphsVuEYMQf1PrP3JA3bjG0Qzdx3IcDnC_HkOIQ:1x9krb:jBqoDm7s3xLPqfpRgyApDbYdVnSkH-Xy4KfB1xfrY-w', '2026-10-08 14:55:55.689792'),
+('0j44cs5krpij8aw0irlwtacuydl8bgfs', '.eJxVjEEOgjAQRe8ya9IApdaydO8ZmikzI0ilhpaV8e5Kwobtf-_9DwhOkcljKfx6lwx9XUFMw-zL9GLoly3GCjxuZfRb5tVPBD00cNoCDjMvO6AnLo-khrSUdQpqV9RBs7on4ng73NPBiHn815aEhDXVIjbYK7E2jKg7Z9qGG2OscKeJXG3YkYROLoaCtE4aIRtCDd8f60NGlQ:1xDtbp:3WtBFAwzMXLi_jjQeHQIYG78jp_rVNhidzejGfM3AWM', '2026-10-20 01:04:45.577599'),
 ('0z3k2zjmmqiez3559lcz50nrom8fzfln', '.eJxVjEEOgyAQAP-yZ0NABZRj730DWVioVMRG8dT0742JF68zk_lCxJQDWaw1LJ-6g-EN5NXPtqYlgClHzg1YPOpkjz1sNhEYEHBjDv0cyinojeW1Mr-WuiXHzoRddmfPlUJ-XO1tMOE-gQHtRNtipwePSH1LA1dOqLHzHKMIPJJ3WouoSMropETfOR5FrzxFNw5Kwe8PwOZFsA:1xBCV5:GgCEqRrqXb5BCPQx4qhcntA7VVZB4kX_myb-iychwL4', '2026-10-12 14:38:39.707241'),
 ('1jyn03xuot89bx8qw2x9s3l0tayf7tnq', '.eJxVjMEOgyAQRP9lz4aIq0Q89t5vIAsLlYrYKJ6a_ns18eJpJvNm5guBYvJsqBQ_f8oGQ11BWtxkSpw9DHlPqQJDexnNvvnVRIYBJNwyS27y-QT8pvxahFtyWaMVZ0VcdBPPhX16XN3bwUjbeKwbtAqVllJhCJIshcNr1l3XukCK2xbJY4PqULSd7jWy7JhVr9CHmuD3B5yuRKA:1wU3on:vzg2cRp20vvN3l5rhCioqSKAbFuHU7GbPcfLYMmL-jE', '2026-06-15 14:40:41.437538'),
 ('2inqt59tihujff6t68g6z5boos5letut', '.eJxVjEsOgjAUAO_y1qbpK7QFlu49A3mf1qIGEgor490NCQvdzkzmDSPtWxn3mtZxUhgA4fLLmOSZ5kPog-b7YmSZt3VicyTmtNXcFk2v69n-DQrVAgNERueoiZ0Qaeu0s4Ex9I1YyphsVuEYMQf1PrP3JA3bjG0Qzdx3IcDnC_HkOIQ:1x9l9p:sCyUQ9REL4g10CUY6f8B4-JKHuW-iMWjVHLB7QhVOyc', '2026-10-08 15:14:45.635911'),
@@ -367,6 +450,192 @@ INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALU
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `explore_categories`
+--
+
+CREATE TABLE `explore_categories` (
+  `id` char(32) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `description` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `explore_categories`
+--
+
+INSERT INTO `explore_categories` (`id`, `name`, `description`) VALUES
+('16c4239fbab348f0b10c82a578e38f7a', 'Accommodation', 'Hotels, inns, and staycations in Kabankalan'),
+('61f1512c3dc54eb58d6dc6eda02e2303', 'Sports & Recreation', 'Billiard halls, gyms, and sports venues'),
+('74518beb5ae74874ad3e9bd522904477', 'Transport Hub', 'Bus terminals, jeepney terminals, and transport stops'),
+('c5bf3358771745b0896c7602d1980e94', 'Food & Dining', 'Restaurants, cafes, and local food spots'),
+('fcd1397b555f442bb8a44e7431971259', 'Tourist Attraction', 'Natural wonders, parks, and cultural sites');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_city_information`
+--
+
+CREATE TABLE `explore_city_information` (
+  `id` char(32) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `info_type` varchar(20) NOT NULL,
+  `content` longtext NOT NULL,
+  `event_date` date DEFAULT NULL,
+  `is_published` tinyint(1) NOT NULL,
+  `created_at` datetime(6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_hobbies`
+--
+
+CREATE TABLE `explore_hobbies` (
+  `id` char(32) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `slug` varchar(100) NOT NULL,
+  `icon` varchar(100) NOT NULL,
+  `description` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `explore_hobbies`
+--
+
+INSERT INTO `explore_hobbies` (`id`, `name`, `slug`, `icon`, `description`) VALUES
+('153e7013717347b4b85d2ee43a64f5fd', 'Coffee & Cafe Hopping', 'coffee-cafe-hopping', 'ti-coffee', 'Cozy spots for specialty coffee and casual hangouts'),
+('1a91493af4c34cecb4ad132c4b23eb52', 'Karaoke & Nightlife', 'karaoke-nightlife', 'ti-microphone', 'KTV bars, live music, and evening entertainment'),
+('2f9e05cc6e564bd6920cd56f056d8eea', 'Photography', 'photography', 'ti-camera', 'Picturesque landscapes, heritage spots, and aesthetic spots'),
+('6cfd7adfcdc847929c159092e832f123', 'Billiards', 'billiards', 'ti-ball-8', 'Cue sports and pool halls'),
+('e6cd1c98157a474c9e7154ca830b6aac', 'Hiking & Eco-Tourism', 'hiking-eco-tourism', 'ti-mountain', 'Nature trails, caves, and scenic mountain views'),
+('ed7e9978f794415c8a2916266d55d41c', 'Dining & Foodie', 'dining-foodie', 'ti-utensils', 'Local delicacies, chicken inasal, and dining spots');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_itineraries`
+--
+
+CREATE TABLE `explore_itineraries` (
+  `id` char(32) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `generated_by_ai` tinyint(1) NOT NULL,
+  `created_at` datetime(6) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_itinerary_items`
+--
+
+CREATE TABLE `explore_itinerary_items` (
+  `id` char(32) NOT NULL,
+  `order` int(10) UNSIGNED NOT NULL CHECK (`order` >= 0),
+  `notes` varchar(255) NOT NULL,
+  `itinerary_id` char(32) NOT NULL,
+  `place_id` char(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_places`
+--
+
+CREATE TABLE `explore_places` (
+  `id` char(32) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` longtext NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `barangay` varchar(100) NOT NULL,
+  `latitude` decimal(9,6) DEFAULT NULL,
+  `longitude` decimal(9,6) DEFAULT NULL,
+  `operating_hours` varchar(255) NOT NULL,
+  `contact_number` varchar(50) NOT NULL,
+  `email` varchar(254) NOT NULL,
+  `facebook_page` varchar(200) NOT NULL,
+  `ai_keywords` longtext NOT NULL,
+  `is_verified` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `created_at` datetime(6) NOT NULL,
+  `updated_at` datetime(6) NOT NULL,
+  `category_id` char(32) NOT NULL,
+  `owner_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `explore_places`
+--
+
+INSERT INTO `explore_places` (`id`, `title`, `description`, `address`, `barangay`, `latitude`, `longitude`, `operating_hours`, `contact_number`, `email`, `facebook_page`, `ai_keywords`, `is_verified`, `is_active`, `created_at`, `updated_at`, `category_id`, `owner_id`) VALUES
+('0854d149586a43bdb2f5dd33b9ba4bbc', 'Central City Cafe & Lounge', 'Modern cafe offering brewed coffee, cold drinks, pasta, and pastries. Great environment for students and workers.', 'Near City Public Plaza, Barangay 2, Kabankalan City', 'Barangay 2', 9.989100, 122.816200, 'Mon-Sat: 9:00 AM - 9:00 PM', '+63 945 999 8877', '', '', 'coffee, wifi, aircon, study spot, espresso, pastries, snacks, central kabankalan', 1, 1, '2026-10-06 01:48:34.213934', '2026-10-06 01:48:34.213934', 'c5bf3358771745b0896c7602d1980e94', NULL),
+('5dc5e6b94d9f48c0a346134b1de52e9c', 'Mag-Aso Falls', 'Famous natural waterfall surrounded by lush green landscapes and turquoise natural swimming pools.', 'Sitio Mag-aso, Barangay Oringao, Kabankalan City', 'Barangay Oringao', 9.923400, 122.861100, 'Mon-Sun: 7:00 AM - 5:00 PM', '+63 912 345 6789', '', '', 'waterfall, swimming, nature, eco-tourism, hiking, scenic view, picnic, oringao', 1, 1, '2026-10-06 01:48:34.194527', '2026-10-06 01:48:34.194527', 'fcd1397b555f442bb8a44e7431971259', NULL),
+('6623498baccb4247a3e2e1610d0b87c7', 'Cue & Break Billiard Center', 'Spacious billiard hall located near the city center equipped with standard pool tables and refreshments.', 'Guanzon Street, Barangay 1, Kabankalan City', 'Barangay 1', 9.988200, 122.815500, 'Mon-Sun: 1:00 PM - 11:00 PM', '+63 930 111 2233', '', '', 'billiards, pool hall, cue sports, aircon, barkada hangout, night activity, play pool tonight', 1, 1, '2026-10-06 01:48:34.213934', '2026-10-06 01:48:34.213934', '61f1512c3dc54eb58d6dc6eda02e2303', NULL),
+('ed8660e8f49b480e85b3780058cf1879', 'Balicaocao Highland Resort', 'Highland resort sitting 500 feet above sea level offering panoramic views of Kabankalan and nearby towns.', 'Barangay Orong, Kabankalan City', 'Barangay Orong', 9.967800, 122.845000, 'Mon-Sun: 8:00 AM - 7:00 PM', '+63 998 765 4321', '', '', 'highland, mountain view, resort, swimming pool, breeze, sunset photo spot, relaxing', 1, 1, '2026-10-06 01:48:34.213934', '2026-10-06 01:48:34.213934', 'fcd1397b555f442bb8a44e7431971259', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_places_hobbies`
+--
+
+CREATE TABLE `explore_places_hobbies` (
+  `id` int(11) NOT NULL,
+  `place_id` char(32) NOT NULL,
+  `hobby_id` char(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `explore_places_hobbies`
+--
+
+INSERT INTO `explore_places_hobbies` (`id`, `place_id`, `hobby_id`) VALUES
+(8, '0854d149586a43bdb2f5dd33b9ba4bbc', '153e7013717347b4b85d2ee43a64f5fd'),
+(9, '0854d149586a43bdb2f5dd33b9ba4bbc', 'ed7e9978f794415c8a2916266d55d41c'),
+(1, '5dc5e6b94d9f48c0a346134b1de52e9c', '2f9e05cc6e564bd6920cd56f056d8eea'),
+(2, '5dc5e6b94d9f48c0a346134b1de52e9c', 'e6cd1c98157a474c9e7154ca830b6aac'),
+(7, '6623498baccb4247a3e2e1610d0b87c7', '1a91493af4c34cecb4ad132c4b23eb52'),
+(6, '6623498baccb4247a3e2e1610d0b87c7', '6cfd7adfcdc847929c159092e832f123'),
+(3, 'ed8660e8f49b480e85b3780058cf1879', '153e7013717347b4b85d2ee43a64f5fd'),
+(4, 'ed8660e8f49b480e85b3780058cf1879', '2f9e05cc6e564bd6920cd56f056d8eea'),
+(5, 'ed8660e8f49b480e85b3780058cf1879', 'e6cd1c98157a474c9e7154ca830b6aac');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_place_photos`
+--
+
+CREATE TABLE `explore_place_photos` (
+  `id` char(32) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `caption` varchar(255) NOT NULL,
+  `is_primary` tinyint(1) NOT NULL,
+  `place_id` char(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `explore_reviews`
+--
+
+CREATE TABLE `explore_reviews` (
+  `id` char(32) NOT NULL,
+  `rating` smallint(5) UNSIGNED NOT NULL CHECK (`rating` >= 0),
+  `comment` longtext NOT NULL,
+  `created_at` datetime(6) NOT NULL,
+  `place_id` char(32) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tblinfo`
 --
 
@@ -386,7 +655,8 @@ CREATE TABLE `tblinfo` (
 --
 
 INSERT INTO `tblinfo` (`id`, `name`, `age`, `address`, `email`, `created_at`, `updated_at`, `user_id`) VALUES
-(1, 'Glenn Azuelo1', 30, 'cauayan', 'glennazuelo1@gmail.com', '2026-09-28 14:16:01.072631', '2026-09-28 14:16:13.176731', 1);
+(1, 'Glenn Azuelo1', 30, 'cauayan', 'glennazuelo1@gmail.com', '2026-09-28 14:16:01.072631', '2026-09-28 14:16:13.176731', 1),
+(3, 'erwin', 22, 'sx', 'smoshiee34@gmail.com', '2026-10-06 01:09:46.126406', '2026-10-06 01:09:46.126406', 1);
 
 --
 -- Indexes for dumped tables
@@ -466,6 +736,73 @@ ALTER TABLE `django_session`
   ADD KEY `django_session_expire_date_a5c62663` (`expire_date`);
 
 --
+-- Indexes for table `explore_categories`
+--
+ALTER TABLE `explore_categories`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `explore_city_information`
+--
+ALTER TABLE `explore_city_information`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `explore_hobbies`
+--
+ALTER TABLE `explore_hobbies`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`),
+  ADD UNIQUE KEY `slug` (`slug`);
+
+--
+-- Indexes for table `explore_itineraries`
+--
+ALTER TABLE `explore_itineraries`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `explore_itineraries_user_id_48d1ce52_fk_auth_user_id` (`user_id`);
+
+--
+-- Indexes for table `explore_itinerary_items`
+--
+ALTER TABLE `explore_itinerary_items`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `explore_itinerary_it_itinerary_id_21706e48_fk_explore_i` (`itinerary_id`),
+  ADD KEY `explore_itinerary_items_place_id_b6732b25_fk_explore_places_id` (`place_id`);
+
+--
+-- Indexes for table `explore_places`
+--
+ALTER TABLE `explore_places`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `explore_places_category_id_55298638_fk_explore_categories_id` (`category_id`),
+  ADD KEY `explore_places_owner_id_977a656b_fk_auth_user_id` (`owner_id`);
+
+--
+-- Indexes for table `explore_places_hobbies`
+--
+ALTER TABLE `explore_places_hobbies`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `explore_places_hobbies_place_id_hobby_id_759ad8c2_uniq` (`place_id`,`hobby_id`),
+  ADD KEY `explore_places_hobbies_hobby_id_de4ab4b8_fk_explore_hobbies_id` (`hobby_id`);
+
+--
+-- Indexes for table `explore_place_photos`
+--
+ALTER TABLE `explore_place_photos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `explore_place_photos_place_id_e51ea5e2_fk_explore_places_id` (`place_id`);
+
+--
+-- Indexes for table `explore_reviews`
+--
+ALTER TABLE `explore_reviews`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `explore_reviews_place_id_b858af86_fk_explore_places_id` (`place_id`),
+  ADD KEY `explore_reviews_user_id_b46ded02_fk_auth_user_id` (`user_id`);
+
+--
 -- Indexes for table `tblinfo`
 --
 ALTER TABLE `tblinfo`
@@ -492,7 +829,7 @@ ALTER TABLE `auth_group_permissions`
 -- AUTO_INCREMENT for table `auth_permission`
 --
 ALTER TABLE `auth_permission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
 
 --
 -- AUTO_INCREMENT for table `auth_user`
@@ -522,19 +859,25 @@ ALTER TABLE `django_admin_log`
 -- AUTO_INCREMENT for table `django_content_type`
 --
 ALTER TABLE `django_content_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `django_migrations`
 --
 ALTER TABLE `django_migrations`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
+-- AUTO_INCREMENT for table `explore_places_hobbies`
+--
+ALTER TABLE `explore_places_hobbies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tblinfo`
 --
 ALTER TABLE `tblinfo`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
@@ -573,6 +916,46 @@ ALTER TABLE `auth_user_user_permissions`
 ALTER TABLE `django_admin_log`
   ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
+
+--
+-- Constraints for table `explore_itineraries`
+--
+ALTER TABLE `explore_itineraries`
+  ADD CONSTRAINT `explore_itineraries_user_id_48d1ce52_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
+
+--
+-- Constraints for table `explore_itinerary_items`
+--
+ALTER TABLE `explore_itinerary_items`
+  ADD CONSTRAINT `explore_itinerary_it_itinerary_id_21706e48_fk_explore_i` FOREIGN KEY (`itinerary_id`) REFERENCES `explore_itineraries` (`id`),
+  ADD CONSTRAINT `explore_itinerary_items_place_id_b6732b25_fk_explore_places_id` FOREIGN KEY (`place_id`) REFERENCES `explore_places` (`id`);
+
+--
+-- Constraints for table `explore_places`
+--
+ALTER TABLE `explore_places`
+  ADD CONSTRAINT `explore_places_category_id_55298638_fk_explore_categories_id` FOREIGN KEY (`category_id`) REFERENCES `explore_categories` (`id`),
+  ADD CONSTRAINT `explore_places_owner_id_977a656b_fk_auth_user_id` FOREIGN KEY (`owner_id`) REFERENCES `auth_user` (`id`);
+
+--
+-- Constraints for table `explore_places_hobbies`
+--
+ALTER TABLE `explore_places_hobbies`
+  ADD CONSTRAINT `explore_places_hobbies_hobby_id_de4ab4b8_fk_explore_hobbies_id` FOREIGN KEY (`hobby_id`) REFERENCES `explore_hobbies` (`id`),
+  ADD CONSTRAINT `explore_places_hobbies_place_id_78f4e075_fk_explore_places_id` FOREIGN KEY (`place_id`) REFERENCES `explore_places` (`id`);
+
+--
+-- Constraints for table `explore_place_photos`
+--
+ALTER TABLE `explore_place_photos`
+  ADD CONSTRAINT `explore_place_photos_place_id_e51ea5e2_fk_explore_places_id` FOREIGN KEY (`place_id`) REFERENCES `explore_places` (`id`);
+
+--
+-- Constraints for table `explore_reviews`
+--
+ALTER TABLE `explore_reviews`
+  ADD CONSTRAINT `explore_reviews_place_id_b858af86_fk_explore_places_id` FOREIGN KEY (`place_id`) REFERENCES `explore_places` (`id`),
+  ADD CONSTRAINT `explore_reviews_user_id_b46ded02_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
 
 --
 -- Constraints for table `tblinfo`
